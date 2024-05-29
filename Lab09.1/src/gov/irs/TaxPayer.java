@@ -23,4 +23,8 @@ public interface TaxPayer {
     
     public void payTaxes();
 
+    default public void fileReturn(){
+        System.out.println("Employee must file a return");
+    }
+
 }
