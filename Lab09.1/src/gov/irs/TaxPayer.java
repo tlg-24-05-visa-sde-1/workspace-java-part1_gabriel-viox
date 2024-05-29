@@ -8,6 +8,7 @@
 
 package gov.irs;
 
+
 /**
  * An argument can be made that the tax rate constants are better defined
  * on the classes that use them, and not all lumped in here.
@@ -21,4 +22,5 @@ public interface TaxPayer {
     public static final double SALARIED_TAX_RATE = 0.30;
     
     public void payTaxes();
+
 }
