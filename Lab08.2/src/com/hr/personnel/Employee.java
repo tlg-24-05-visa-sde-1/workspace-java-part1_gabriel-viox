@@ -51,9 +51,7 @@ public abstract class Employee {
     // but we cannot implement, all we have is a name and hireDate
     // So we say "that" all employees get paid, but we don't say how
     public abstract void pay();
-
-
-
+    
     // accessor methods
     public String getName() {
         return name;
