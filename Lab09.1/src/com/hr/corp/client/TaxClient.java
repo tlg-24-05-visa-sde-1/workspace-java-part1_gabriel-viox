@@ -35,7 +35,7 @@ class TaxClient {
 
 
         // IRS collects taxes
-        System.out.println("IRS collects taxes:");
+        System.out.println("\nIRS collects taxes:");
         irs.collectTaxes();
     }
 }

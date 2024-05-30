@@ -6,6 +6,7 @@ import java.time.LocalDate;
 
 public class SalariedEmployee extends Employee {
     private double salary;
+    private double SALARIED_DEDUCTION = 150000;
 
     // A superclass constructor is always called - ALWAYS
     // Constructors
@@ -52,5 +53,10 @@ public class SalariedEmployee extends Employee {
     @Override
     public void payTaxes() {
         System.out.println(getName()+ " paid taxes of " + ( getSalary() * SALARIED_TAX_RATE));
+    }
+
+    @Override
+    public double getStandardDeduction(){
+        return SALARIED_DEDUCTION;
     }
 }
