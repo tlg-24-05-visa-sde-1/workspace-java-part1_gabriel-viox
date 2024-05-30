@@ -1,8 +1,8 @@
 
 // import the Random class from java.util
 import java.util.Random;
-
 public class RandomNumberGenerator {
+
     public static void main(String[] args) {
         Random d20 = new Random();
         int number;
