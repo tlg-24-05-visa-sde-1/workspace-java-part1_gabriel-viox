@@ -1,4 +1,6 @@
 package org.math;
+import java.util.ArrayList;
+import java.util.List;
 //import static java.lang.Math.random;
 
 
@@ -6,6 +8,15 @@ package org.math;
 class CalculatorClient {
     public static void main(String[] args) {
         // first you need a calculator object
+
+        List<Integer> input = new ArrayList<>();
+        input.add(5);
+        input.add(7);
+        input.add(1);
+
+        int smallest = Calculator.findMin(input);
+        System.out.println("The smallest number is " + smallest);
+
         double sum = Calculator.add(17,10);
         System.out.println("Sum: " + sum);
 

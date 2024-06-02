@@ -1,13 +1,33 @@
 package org.math;
 //import  static java.lang.Math.*;
 
+import java.util.Collection;
+import java.util.List;
+
 class Calculator {
     /*
      * Returns avergae of supplied Integers
      */
 
+    //collections can only store objects
+    public static int findMin(List<Integer> values){
+        // pretend it was (5,7,1)
+        int smallest = values.get(0);
+
+        //for each integer value in values
+        for (Integer value: values) {
+            if (value < smallest) {
+                smallest = value;
+            }
+        }
+        return smallest;
+    }
+
+
     public static double average(int first, int... rest){
         double result = 0.0;
+
+        // gets you the sum of the int in the array
         int sum = first;
         for(int value : rest){
             sum += value; // sum = sum + value
