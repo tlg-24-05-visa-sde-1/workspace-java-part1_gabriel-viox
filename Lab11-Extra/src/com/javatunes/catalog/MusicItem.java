@@ -114,11 +114,11 @@ implements Comparable<MusicItem> {
     @Override
     public String toString() {
         return getClass().getSimpleName() +
-                " (id=" + getId() +
-                ", title=" + getTitle() +
-                ", artist=" + getArtist() +
-                ", releaseDate=" + getReleaseDate() +
-                ", price=" + getPrice() +
-                ", musicCategory=" + getMusicCategory() + ")";
+                " ( id= " + getId() +
+                ", title= " + getTitle() +
+                ", artist= " + getArtist() +
+                ", releaseDate= " + getReleaseDate() +
+                ", price= " + getPrice() +
+                ", musicCategory= " + getMusicCategory() + ")";
     }
 }

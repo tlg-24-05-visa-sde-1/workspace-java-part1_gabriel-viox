@@ -101,7 +101,7 @@ public class InMemoryCatalog implements Catalog {
 
     @Override
     public Collection<MusicItem> getAll() {
-        return List.of();
+        return catalogData;
     }
 
 
@@ -139,7 +139,6 @@ public class InMemoryCatalog implements Catalog {
 
     public Collection<MusicItem> cheapRock(double price) {
         Collection<MusicItem> result = new ArrayList<>();
-
         for (MusicItem item : catalogData) {
             if ((item.getMusicCategory().equals(MusicCategory.ROCK) ||
                 item.getMusicCategory().equals(MusicCategory.CLASSIC_ROCK)) &&

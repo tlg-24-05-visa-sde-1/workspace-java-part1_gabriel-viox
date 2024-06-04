@@ -28,11 +28,11 @@ class InMemoryCatalogTest {
 
 
     public static void main(String[] args) {
-         testFindById();
-         testFindByKeyword();
-         testFindByCategory();
-         testSize();
-        // testGetAll();
+//         testFindById();
+//         testFindByKeyword();
+//         testFindByCategory();
+//         testSize();
+         testGetAll();
     }
 
     private static void testFindById() {
@@ -64,5 +64,9 @@ class InMemoryCatalogTest {
     }
 
     private static void testGetAll() {
+        InMemoryCatalog catalog = new InMemoryCatalog();
+        for (MusicItem item : catalog.getAll()) {
+            System.out.println(item);
+        }
     }
 }
